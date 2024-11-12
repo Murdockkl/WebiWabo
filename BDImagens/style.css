@@ -1,0 +1,159 @@
+/* Estilo Geral */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Cabeçalho e Títulos */
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 20px;
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* Botões */
+.button-container, .return-button {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button, input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+button a, .link {
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilo do Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+input[type="text"], textarea, input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[type="text"]:focus, textarea:focus, input[type="file"]:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+}
+
+/* Estilo da Galeria */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* Estilo das Postagens */
+.post {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+    object-fit: cover;
+}
+
+.post p {
+    color: #555;
+    font-size: 14px;
+    margin: 10px 0;
+    line-height: 1.4;
+}
+
+.post a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #e74c3c;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.post a:hover {
+    color: #c0392b;
+}
+
+/* Mensagens de Sucesso e Erro */
+.success, .error {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.success {
+    color: #2ecc71;
+}
+
+.error {
+    color: #e74c3c;
+}
